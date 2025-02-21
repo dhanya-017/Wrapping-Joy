@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wrapping Joy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" />
+        <h1>Wrapping Joy</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-content">
+          <h2>Celebrate Every Occasion with a Special Gift</h2>
+          <p>
+            The ultimate destination for thoughtful gifting solution for every
+            occasion 🍁
+          </p>
+          <a href="#shop" class="btn">Shop Now</a>
+        </div>
+      </section>
+
+      <section id="shop" class="product-section">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <a href="product-details.html?id=product1">
+              <img src="images/product1.jpg" alt="Product 1" />
+            </a>
+            <h3>Flower Bouquet</h3>
+            <p>₹399</p>
+            <button onclick="addToCart('Flower Bouquet', 399)">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product-card">
+            <a href="product-details.html?id=product2">
+              <img src="images/product2.jpg" alt="Product 2" />
+            </a>
+            <h3>Customised Gifts</h3>
+            <p>₹199</p>
+            <button onclick="addToCart('Customised Gifts', 199)">
+              Add to Cart
+            </button>
+          </div>
+          <div class="product-card">
+            <a href="product-details.html?id=product3">
+              <img src="images/product3.jpg" alt="Product 3" />
+            </a>
+            <h3>Jewelry</h3>
+            <p>₹199</p>
+            <button onclick="addToCart('Jewelry', 199)">Add to Cart</button>
+          </div>
+          <div class="product-card">
+          <a href="product-details.html?id=product4">
+            <img src="images/product4.jpg" alt="Product 4" />
+          </a>
+          <h3>Cakes</h3>
+          <p>₹599 onwards</p>
+          <button onclick="addToCart('Cakes', 599)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <a href="product-details.html?id=product5">
+            <img src="images/product5.jpg" alt="Product 5" />
+          </a>
+          <h3>Balloons</h3>
+          <p>₹99 onwards</p>
+          <button onclick="addToCart('Balloons', 99)">Add to Cart</button>
+        </div>
+        
+      </section>
+      <section id="about">
+        <h1>ABOUT US</h1>
+        <p>
+          At Wrapping Joy, we believe that every moment deserves to be celebrated with a thoughtful gift. Whether it's a birthday, anniversary, wedding, or any special occasion, our mission is to help you find the perfect present that brings joy and smiles to your loved ones. Founded with a passion for gifting, we curate a wide range of personalized gifts, stunning floral arrangements, delectable cakes, and vibrant balloons to make your celebrations unforgettable.,<br><br>
+
+          Our team works tirelessly to bring you high-quality, unique products that cater to every taste and budget. We understand the importance of meaningful gestures, which is why we go the extra mile to ensure that each gift is beautifully wrapped and delivered with love. From elegant jewelry to bespoke customized items, our collection is designed to add a personal touch to every occasion.<br><br>
+
+          At Wrapping Joy, we don’t just sell gifts – we create experiences. Let us help you express your love, gratitude, and joy with gifts that speak from the heart.<br>
+        </p>
+      </section>
+      <section id="contact">
+        <h1>Contact Us</h1>
+      
+        <p>We'd love to hear from you! Whether you have a question, feedback, or need assistance with your order, we're here to help. Get in touch with us through the form below or reach out using our contact details.</p>
+      
+        <div class="contact-container">
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit-contact-form.php" method="POST">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your name" />
+      
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email" />
+      
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Write your message"></textarea>
+      
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+      
+          <!-- Contact Details -->
+          <div class="contact-details">
+            <h2>Our Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:info@wrappingjoy.com">info@wrappingjoy.com</a></p>
+            <p><strong>Phone:</strong> +91 1234567890</p>
+            <p><strong>Address:</strong> 123 Celebration Avenue, Gurgaon, Uttar Pradesh, India</p>
+            
+            <h3>Follow Us:</h3>
+            <ul class="social-media">
+              <li><a href="https://facebook.com/wrappingjoy" target="_blank">Facebook</a></li>
+              <li><a href="https://instagram.com/wrappingjoy" target="_blank">Instagram</a></li>
+              <li><a href="https://twitter.com/wrappingjoy" target="_blank">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Wrapping Joy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
